@@ -1,6 +1,6 @@
 # CSharp_Project
 
-Here are stored my university C# project. To view them switch on their respectively branches. Branches grown with difficulty.
+Here are stored my university C# project.
 
 - Block1 : Basics_Exercise
 - Block2 : Console_ConditionalsLoops_Array_Exercises
