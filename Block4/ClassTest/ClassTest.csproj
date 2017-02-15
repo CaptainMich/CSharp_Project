@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DE655C0-B57B-4097-8391-8FD75D8E503A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassTest</RootNamespace>
+    <AssemblyName>ClassTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="UnitTest01.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest02.cs" />
+    <Compile Include="UnitTest03.cs" />
+    <Compile Include="UnitTest04.cs" />
+    <Compile Include="UnitTest05.cs" />
+    <Compile Include="UnitTest06.cs" />
+    <Compile Include="UnitTest07.cs" />
+    <Compile Include="UnitTest08.cs" />
+    <Compile Include="UnitTest09.cs" />
+    <Compile Include="UnitTest10.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Exercise01\Exercise01.csproj">
+      <Project>{a0e79a44-e5b4-4581-887d-7efa504c9bb0}</Project>
+      <Name>Exercise01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise02\Exercise02.csproj">
+      <Project>{6c68263f-82b7-45db-962f-3d99e7625cda}</Project>
+      <Name>Exercise02</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise03\Exercise03.csproj">
+      <Project>{da79f80c-ec50-4106-ba8e-6f415c586cee}</Project>
+      <Name>Exercise03</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise04\Exercise04.csproj">
+      <Project>{e90a62db-ad26-464c-8b99-2720295ca407}</Project>
+      <Name>Exercise04</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise05\Exercise05.csproj">
+      <Project>{d11c9812-2e1d-4a0d-b667-ae0a59f4e17c}</Project>
+      <Name>Exercise05</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise06\Exercise06.csproj">
+      <Project>{a0bd514b-38ba-4a2a-9706-6943eccefa9a}</Project>
+      <Name>Exercise06</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise07\Exercise07.csproj">
+      <Project>{c2ba518c-1e6a-43cc-80b8-21378ae61aed}</Project>
+      <Name>Exercise07</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise08\Exercise08.csproj">
+      <Project>{faa665d0-121e-44b4-9048-5de5dc193ad2}</Project>
+      <Name>Exercise08</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise09\Exercise09.csproj">
+      <Project>{114d129b-5dc0-418b-aa18-47034efb1ce8}</Project>
+      <Name>Exercise09</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exercise10\Exercise10.csproj">
+      <Project>{5d92c1fa-50fa-4843-a8e8-f3e6d87a1e7b}</Project>
+      <Name>Exercise10</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
